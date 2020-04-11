@@ -1,0 +1,27 @@
+{
+  "name": "presentation-css-dark",
+  "version": "4.10.0",
+  "description": "The Augmented.js Next - Presentation SASS/CSS Module Dark Mode.",
+  "main": "src/styles/darkmode.scss",
+  "scripts": {
+    "sass": "node-sass src/styles/darkmode.scss > src/styles/darkmode.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augmentedjs/presentation-css-darkmode.git"
+  },
+  "keywords": [
+    "augmentedjs",
+    "presentation"
+  ],
+  "author": "Bob Warren <jedi.master@augmentedjs.com> (http://www.augmentedjs.com)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/Augmentedjs/presentation-css-dark/issues"
+  },
+  "homepage": "http://www.augmentedjs.com"
+}
