@@ -38,7 +38,8 @@ input:focus, textarea:focus, code:focus {
 .input input:not(:focus) + label, .input.large input:not(:focus) + label {
   color: rgba(255, 255, 255, 0.5);
 }
-.input.large input:not(:placeholder-shown):not(:focus) {
+
+.input.large input:not(:placeholder-shown):not(:focus), .input input:not(:placeholder-shown):not(:focus) {
   border-bottom: 1px solid var(--light-text);
 }
 
