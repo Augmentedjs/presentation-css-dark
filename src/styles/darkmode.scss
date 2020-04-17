@@ -61,7 +61,7 @@ input:focus, textarea:focus, code:focus {
   border-bottom: 1px solid var(--light-text);
 }
 
-.checkbox {
+.checkbox, .checkbox.large {
   input[type="checkbox"] {
     background-color: var(--app-color);
     border: 2px solid rgba(255, 255, 255, 0.85);

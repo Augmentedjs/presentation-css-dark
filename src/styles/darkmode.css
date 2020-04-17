@@ -47,16 +47,16 @@ input:focus, textarea:focus, code:focus {
 .panel div.select, div.select, .select {
   border-bottom: 1px solid var(--light-text); }
 
-.checkbox input[type="checkbox"] {
+.checkbox input[type="checkbox"], .checkbox.large input[type="checkbox"] {
   background-color: var(--app-color);
   border: 2px solid rgba(255, 255, 255, 0.85); }
-  .checkbox input[type="checkbox"]:hover::before {
+  .checkbox input[type="checkbox"]:hover::before, .checkbox.large input[type="checkbox"]:hover::before {
     background-color: rgba(255, 255, 255, 0.1); }
-  .checkbox input[type="checkbox"]:checked {
+  .checkbox input[type="checkbox"]:checked, .checkbox.large input[type="checkbox"]:checked {
     background-color: var(--primary-color);
     border-color: var(--primary-color); }
 
-.checkbox label {
+.checkbox label, .checkbox.large label {
   color: var(--light-text); }
 
 .panel .menu ul {
