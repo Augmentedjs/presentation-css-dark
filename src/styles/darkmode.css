@@ -11,9 +11,6 @@
 body, h3, table td, table th, textarea, code, label, input, select {
   color: var(--light-text); }
 
-table, table td, table th {
-  border: 1px solid var(--light-text); }
-
 input:focus, textarea:focus, code:focus {
   color: var(--light-text); }
 
@@ -77,6 +74,15 @@ dialog {
   color: var(--light-text); }
   dialog h1, dialog h2, dialog h3, dialog h4, dialog h5, dialog h6 {
     color: var(--light-text); }
+  dialog.about h1 {
+    color: var(--primary-color-light); }
+
+dialog button, button {
+  border: none;
+  color: var(--primary-color-light); }
+  dialog button:hover, button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: var(--primary-color-light); }
 
 /* recolor hamburger */
 .menu {
@@ -94,23 +100,6 @@ dialog {
   .menu div:hover {
     background-color: var(--secondary-color-dark); }
 
-table.material {
-  background-color: var(--table-background); }
-  table.material td, table.material td.label, table.material th, table.material input, table.material td input, table.material caption, table.material select {
-    color: var(--light-text); }
-  table.material td, table.material th {
-    color: var(--app-text);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-    table.material td:hover, table.material th:hover {
-      color: var(--app-text);
-      background-color: var(--secondary-color-dark); }
-
-a {
-  color: var(--secondary-color-light); }
-
-.list i {
-  color: rgba(255, 255, 255, 0.5); }
-
 .leftNav {
   border-right: 1px solid rgba(255, 255, 255, 0.5); }
   .leftNav > div {
@@ -126,12 +115,22 @@ a {
     .leftNav > div:hover {
       background-color: rgba(0, 0, 0, 0.25); }
 
-dialog button, button {
-  border: none;
-  color: var(--primary-color-light); }
-  dialog button:hover, button:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-    color: var(--primary-color-light); }
+table, table td, table th {
+  border: 1px solid var(--light-text); }
+
+table.material {
+  background-color: var(--table-background); }
+  table.material td, table.material td.label, table.material th, table.material input, table.material td input, table.material caption, table.material select {
+    color: var(--light-text); }
+  table.material td, table.material th {
+    color: var(--app-text);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    table.material td:hover, table.material th:hover {
+      color: var(--app-text);
+      background-color: var(--secondary-color-dark); }
+
+.list i {
+  color: rgba(255, 255, 255, 0.5); }
 
 a {
   color: var(--secondary-color); }
@@ -142,9 +141,6 @@ a {
 
 ul li:hover, ol li:hover {
   background-color: var(--secondary-color-dark); }
-
-dialog.about h1 {
-  color: var(--primary-color-light); }
 
 .barChart {
   border-color: var(--light-text); }
@@ -177,3 +173,7 @@ dialog.about h1 {
     background-color: rgba(255, 255, 255, 0.1); }
     .carousel button:hover {
       background-color: rgba(255, 255, 255, 0.2); }
+
+/* set a light dot vs dark */
+.dock button.highlight {
+  background-image: url("../images/dot-light.png"); }

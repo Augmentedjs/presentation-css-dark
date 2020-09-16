@@ -1,0 +1,22 @@
+table, table td, table th {
+  border: 1px solid var(--light-text);
+}
+
+table {
+  &.material {
+    background-color: var(--table-background);
+
+    td, td.label, th, input, td input, caption, select {
+      color: var(--light-text);
+    }
+
+    td, th {
+      color: var(--app-text);
+      border-bottom: 1px solid rgba(255,255,255, 0.1);
+      &:hover {
+        color: var(--app-text);
+        background-color: var(--secondary-color-dark);
+      }
+    }
+  }
+}

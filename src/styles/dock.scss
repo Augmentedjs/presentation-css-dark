@@ -1,0 +1,8 @@
+/* set a light dot vs dark */
+.dock {
+  button {
+    &.highlight {
+      background-image: url("../images/dot-light.png");
+    }
+  }
+}

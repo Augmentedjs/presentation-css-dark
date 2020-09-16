@@ -1,0 +1,21 @@
+dialog {
+  color: var(--light-text);
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--light-text);
+  }
+  &.about {
+    h1 {
+      color: var(--primary-color-light);
+    }
+  }
+}
+
+dialog button, button {
+  border: none;
+  color: var(--primary-color-light);
+
+  &:hover {
+    background-color: rgba(255,255,255,0.25);
+    color: var(--primary-color-light);
+  }
+}

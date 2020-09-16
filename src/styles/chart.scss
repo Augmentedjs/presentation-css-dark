@@ -1,0 +1,41 @@
+.barChart {
+  border-color: var(--light-text);
+
+  td.label p, &.horizontal td.label p {
+    color: var(--light-text);
+  }
+
+  &.vertical td {
+    border-color: rgba(255,255,255,0.4);
+
+    background: repeating-linear-gradient( to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 1px, transparent 1px, transparent 5% );
+  }
+
+  > tbody:nth-child(2) {
+    > tr:nth-child(1) > td:nth-child(2) {
+      border-left: 1px solid rgba(255,255,255,0.4);
+    }
+    > tr > td:last-of-type {
+      border-right: 1px solid rgba(255,255,255,0.4);
+    }
+  }
+
+  &.horizontal {
+    td {
+      background: repeating-linear-gradient( to right, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 1px, transparent 1px, transparent 5% );
+    }
+    > tbody:nth-child(2) {
+      > tr:nth-child(1) > td:nth-child(2) {
+        border-top: 1px solid rgba(255,255,255,0.4);
+      }
+
+      > tr:last-of-type > td:nth-child(2) {
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+      }
+
+      > tr > td:nth-child(2) {
+        border-left: 1px solid rgba(255,255,255,0.4);
+      }
+    }
+  }
+}
